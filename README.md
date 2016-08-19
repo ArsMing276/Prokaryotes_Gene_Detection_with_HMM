@@ -9,7 +9,7 @@ the genes. For the remaining 6 genomes, we only know that they contain genes acc
 to the "gene syntax". The genomes and their annontations are given in FASTA format. 
 
 In this project, we will train a hidden markov model on the 11 genomes with **Baum-Welch 
-Algorithm**. After that, we will use **viterbi algorithm** to infer the most possible hidden states
+Algorithm**. After that, we will use **Viterbi Algorithm** to infer the most possible hidden states
 (i.e, genes or not) of the fist five genomes. Finally we will compare the predictions with the true 
 gene coding and calculate the precision of the prediction.
 
