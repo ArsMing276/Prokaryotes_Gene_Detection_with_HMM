@@ -19,7 +19,7 @@ Something needs our attention...
 
 2. To predict the full gene structure, we face the fact that the genomes have genes in both directions (i.e. a nucleotide can be C or R). We can make a HMM which only models genes in one direction and then use it twice to predict the genes in each direction or we can make a model which models genes in both directions.
 
-3.Since genomes are long, i.e. running Viterbi and Baum-Welch takes a lot of memory and time. Thus this implementation is far from perfect and need further improvement.
+3. Since genomes are long, i.e. running Viterbi and Baum-Welch takes a lot of memory and time. Thus this implementation is far from perfect and need further improvement.
 
 
 # References
