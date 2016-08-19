@@ -2,8 +2,16 @@ import numpy as np
 import pandas as pd
 # -*- coding: utf-8 -*-
 """
-Baum Welch parameters
-we have forward backward parameters alpha, beta and temp variables r and s
+Baum Welch parameters calculation
+
+Baum Welch is actually a special form of Expectation - Maximization where we embed 
+forward backward into EM to avoid calculating probabilities that require knowledge of 
+hidden states. In the while process, we need to calculate the following matrices:
+
+1. Forward probabilities   ----  BW_alpha
+2. Backward probabilities  ----  BW_beta
+3. Hidden parameter matrix r and Hidden parameter matrix s, these two matrices are
+just transformation of the original hidden parameter matrix. 
 
 """
 

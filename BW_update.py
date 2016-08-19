@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-update parameters
+This is the following-up step of parameter matrices calculation. After we have updated 
+alpha, beta, r and s, we could update p , A and B to finish a iteration.
 """
 import numpy as np
 import pandas as pd

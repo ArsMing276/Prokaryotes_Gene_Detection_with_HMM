@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 """
-Created on Thu Aug 18 09:29:58 2016
-
-@author: stanley
+Each genome has two sides, they may contain different genes at differnet location. We
+need to consider the two direction separately. This script helps reverse genome if necessary.
 """
 def drtprocess(genomes, annotations, reverse = False):
     #if reversed, change C to N and reverse all genomes and annotations sequences

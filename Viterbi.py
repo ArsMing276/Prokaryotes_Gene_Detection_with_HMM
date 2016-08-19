@@ -34,7 +34,7 @@ def viterbi(genomes, A, B, p):
                 seqs[j,t] = (seqs[:,(t-1)] + np.log(A[:,j]) + np.log(B[j, obs[t]])).max()
                 traces[j,t] = (seqs[:,(t-1)] + np.log(A[:,j]) + np.log(B[j, obs[t]])).argmax()
         
-        ##back-tracing to find the best hidden sequence
+        ##back-tracking to find the best hidden sequence
         best_seq[T[d] - 1] = (seqs[:,T[d] - 1]).argmax()
         for i in reversed(range(T[d] - 1)):
             from_idx = traces[:,(i+1)][best_seq[i+1]]
