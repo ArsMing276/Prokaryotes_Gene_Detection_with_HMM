@@ -14,6 +14,7 @@ Algorithm**. After that, we will use **viterbi algorithm** to infer the most pos
 gene coding and calculate the precision of the prediction.
 
 Something needs our attention...
+
 1. Multiple start-codons are possible in each genome which means we shouldn't fix any probability when training HMM model. In general, if we know what hidden states are or we know some probabilities should be fixed, we could train HMM *By Counting*, otherwise Baum-Welch algorithm is necessary in training. 
 
 2. To predict the full gene structure, we face the fact that the genomes have genes in both directions (i.e. a nucleotide can be C or R). We can make a HMM which only models genes in one direction and then use it twice to predict the genes in each direction or we can make a model which models genes in both directions.
