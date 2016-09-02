@@ -1,4 +1,4 @@
-# Prokaryotes_Gene_Detection_HMM
+# Prokaryotes_Gene_Detection_with_HMM
 
 This project is about using a hidden Markov model for gene finding in prokaryotes.
 
